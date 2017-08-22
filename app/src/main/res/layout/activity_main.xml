@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.fei.nkiv.PassWordInputView
+        android:id="@+id/et_Input"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:background="#666666"
+        android:textSize="22sp"
+        android:cursorVisible="false"
+        android:inputType="number"
+        android:maxLength="10"
+        app:pivPasswordLength="10"
+        app:isPasswordType="false"
+        app:lineWidth="0.5dp"
+        app:line_Margin ="6dp"
+        app:lineColor ="#29dbdbdb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#313132">
+
+        <Button android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:background="@null"
+                android:text="确认"/>
+
+        <com.fei.nkiv.NumberKeyboardView
+            android:id="@+id/number_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/selector_keyboard_btn_bg"
+            android:keyTextColor="#fff"
+            android:keyTextSize="24sp"
+            android:shadowRadius="0"
+            app:pkvDeleteBackgroundColor="#313132"
+            app:pkvDeleteDrawable="@mipmap/keyboard_backspace"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
